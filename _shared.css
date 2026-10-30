@@ -1,0 +1,130 @@
+/* Shared styling for Wiesticized Solitaire's static pages.
+   Matches the in-app palette and typography. */
+
+:root {
+  --felt-1: #1d4032;
+  --felt-2: #163026;
+  --gold:   #d8b46a;
+  --gold-dim: #9c8246;
+  --cream:  #f6f1e3;
+  --cream-dim: #c9bd99;
+  --ink:    #1a1a1a;
+}
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(ellipse at 50% 0%, var(--felt-1), var(--felt-2) 70%);
+  color: var(--cream);
+  font-family: 'Spectral', Georgia, serif;
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+header.site {
+  text-align: center;
+  padding: 32px 16px 20px;
+  border-bottom: 1px solid rgba(216, 180, 106, 0.2);
+  margin-bottom: 24px;
+}
+header.site h1 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--gold);
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+header.site .sub {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  letter-spacing: 0.32em;
+  color: var(--gold-dim);
+  text-transform: uppercase;
+}
+header.site nav {
+  margin-top: 14px;
+  font-size: 13px;
+}
+header.site nav a {
+  color: var(--gold-dim);
+  text-decoration: none;
+  margin: 0 10px;
+  border-bottom: 1px solid transparent;
+  transition: color .15s ease, border-color .15s ease;
+}
+header.site nav a:hover,
+header.site nav a[aria-current="page"] {
+  color: var(--gold);
+  border-bottom-color: var(--gold-dim);
+}
+
+h2 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  margin: 36px 0 12px;
+}
+h3 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--gold);
+  margin: 24px 0 8px;
+}
+
+p { margin: 8px 0 14px; }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+
+a { color: var(--gold); }
+a:hover { color: var(--cream); }
+
+code {
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: rgba(0,0,0,0.3);
+  padding: 1px 5px;
+  border-radius: 3px;
+  color: var(--cream-dim);
+}
+
+em.note {
+  display: block;
+  margin: 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.25);
+  border-left: 3px solid var(--gold-dim);
+  color: var(--cream-dim);
+  font-style: italic;
+  font-size: 14px;
+}
+
+footer.site {
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(216, 180, 106, 0.2);
+  text-align: center;
+  font-size: 12px;
+  color: var(--gold-dim);
+}
+footer.site a { color: var(--gold-dim); }
+footer.site a:hover { color: var(--gold); }
+
+.last-updated {
+  font-size: 12px;
+  color: var(--gold-dim);
+  font-style: italic;
+}
