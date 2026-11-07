@@ -101,6 +101,38 @@ code {
   color: var(--cream-dim);
 }
 
+.cta {
+  display: inline-block;
+  margin: 10px 0 18px;
+  padding: 12px 22px;
+  background: var(--gold);
+  color: var(--felt-2);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.35);
+  transition: background .15s ease, color .15s ease, transform .1s ease;
+}
+.cta:hover {
+  background: var(--cream);
+  color: var(--ink);
+}
+.cta:active {
+  transform: translateY(1px);
+}
+.cta .platform {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--felt-2);
+  opacity: 0.7;
+  margin-bottom: 2px;
+}
+
 em.note {
   display: block;
   margin: 16px 0;
